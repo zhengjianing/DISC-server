@@ -1,2 +1,42 @@
-<h1>Diagnosis#index</h1>
-<p>Find me in app/views/diagnosis/index.html.erb</p>
+<h1 class="title">DISC诊断结果</h1>
+
+<table>
+  <tr>
+    <td class=" name">
+      <p>姓名</p>
+    </td>
+    <td class=" label">
+      <p>D</p>
+    </td>
+    <td class=" label">
+      <p>I</p>
+    </td>
+    <td class=" label">
+      <p>S</p>
+    </td>
+    <td class=" label">
+      <p>C</p>
+    </td>
+  </tr>
+
+  <% @diagnosis.each do |d| %>
+      <tr>
+        <td class="name">
+          <p><%= d.name %></p>
+        </td>
+        <td class="cell">
+          <p><%= d.d_count.to_s %></p>
+        </td>
+        <td class="cell">
+          <p><%= d.i_count.to_s %></p>
+        </td>
+        <td class="cell">
+          <p><%= d.s_count.to_s %></p>
+        </td>
+        <td class="cell">
+          <p><%= d.c_count.to_s %></p>
+        </td>
+      </tr>
+  <% end %>
+
+</table>

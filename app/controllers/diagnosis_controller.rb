@@ -2,7 +2,8 @@ class DiagnosisController < ApplicationController
   skip_before_filter :verify_authenticity_token
 
   def index
-    render json: Diagnosis.all
+    @diagnosis = Diagnosis.all
+    render :index
   end
 
   def create

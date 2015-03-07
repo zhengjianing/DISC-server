@@ -1,7 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DiscServer</title>
+  <style type="text/css">
+      * {
+          font-family: Helvetica;
+          font-size: 14px;
+      }
+      body {
+          margin: 15px 0 0 0;
+          padding: 0px;
+          background: #f7f7f7;
+      }
+      .title {
+          font-size: 24px;
+      }
+      .name {
+          width: 100px;
+      }
+      .label {
+          width: 40px;
+          color: darkmagenta;
+      }
+      .cell {
+          width: 40px;
+          color: #666666;
+      }
+  </style>
+
+  <title>JieShuQuanAPI</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1 ,maximum-scale=1, user-scalable=no'>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
